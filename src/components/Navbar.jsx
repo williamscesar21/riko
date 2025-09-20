@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logoNaranja from "../assets/logoNaranja.png";
+import logoBlanco from "../assets/logoBlanco.png";
 
 // Componente de navegación principal
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
           
           {/* Logo */}
           <div className="flex items-center space-x-2 text-xl font-bold text-white">
-            <img src={logoNaranja} alt="Logo Meal Monkey" className="h-10" />
+            <img src={logoBlanco} alt="Logo Meal Monkey" className="h-10" />
           </div>
 
           {/* Menú horizontal en escritorio */}
