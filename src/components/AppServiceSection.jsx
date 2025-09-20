@@ -1,5 +1,5 @@
 import React from "react";
-import Chat from "../assets/chat.png";
+import Chat from "../assets/Chat.png";
 
 // Sección de servicios de la app
 const AppServiceSection = () => {

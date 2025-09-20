@@ -1,6 +1,6 @@
 import React from "react";
-import Appstore from "../assets/appstore.png";
-import Playstore from "../assets/playstore.png";
+import Appstore from "../assets/Appstore.png";
+import Playstore from "../assets/Playstore.png";
 import DemoVideo from "../assets/RikoApp.mp4";
 
 // Sección de descarga de la app

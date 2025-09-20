@@ -1,6 +1,6 @@
 import React from "react";
 import logoNaranja from "../assets/logoNaranja.png";
-import inicio from "../assets/inicio.png";
+import inicio from "../assets/Inicio.png";
 import Hamburguesa from "../assets/Hamburguesa Pollo.jpeg";
 
 // Sección de contacto
