@@ -19,7 +19,8 @@ const HeroSection = () => {
           entregas.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <a className="bg-[#F08000] text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition duration-300">
+          <a className="bg-[#F08000] text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 cursor-pointer transition duration-300"
+          href="https://wa.me/584121510662?text=Para%20registrarse%20en%20Riko%20App%2C%20deben%20indicar%20el%20nombre%20del%20restaurante%2C%20correo%2C%20direcci%C3%B3n%2C%20tel%C3%A9fono%2C%20y%20todo%20el%20men%C3%BA%20con%20las%20im%C3%A1genes%20de%20los%20productos.">
             Registra tu restaurante ¡Gratis!
           </a>
           <a href="#como-funciona" className="text-gray-600 hover:underline">
