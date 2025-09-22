@@ -28,11 +28,10 @@ const Navbar = () => {
   };
 
   const links = [
-    { name: "Menú", href: "/menu" },
-    { name: "Ofertas", href: "/ofertas" },
-    { name: "Comidas", href: "/comidas" },
-    { name: "Servicios", href: "/servicios" },
-    { name: "Restaurantes", href: "/restaurantes" },
+    { name: "Riko", href: "#Home" },
+    { name: "Ofertas", href: "#Ofertas" },
+    { name: "Servicios", href: "#Servicios" },
+    { name: "Contacto", href: "#Contacto" },
   ];
 
   return (

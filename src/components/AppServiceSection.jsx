@@ -4,7 +4,7 @@ import Chat from "../assets/Chat.png";
 // Sección de servicios de la app
 const AppServiceSection = () => {
   return (
-    <div className="relative overflow-hidden py-16 px-4 bg-white">
+    <div id="Servicios" className="relative overflow-hidden py-16 px-4 bg-white">
       <div className="container mx-auto px-4">
         {/* Layout principal: imagen + contenido */}
         <div className="flex flex-col-reverse items-center lg:flex-row lg:items-center justify-center lg:space-x-20">

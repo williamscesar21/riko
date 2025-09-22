@@ -6,7 +6,7 @@ import Hamburguesa from "../assets/Hamburguesa Pollo.jpeg";
 // Sección de contacto
 const ContactSection = () => {
   return (
-    <section className="bg-white py-16">
+    <section id="Contacto" className="bg-white py-16">
       <div className="container mx-auto px-16">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Columna izquierda: datos de contacto */}

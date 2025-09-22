@@ -5,7 +5,7 @@ import logoNaranja from "../assets/logoNaranja.png";
 // Sección principal del hero
 const HeroSection = () => {
   return (
-    <main className="min-h-screen bg-white text-gray-800 px-4 py-24 md:px-16 flex flex-col items-center justify-center">
+    <main id="Home" className="min-h-screen bg-white text-gray-800 px-4 py-24 md:px-16 flex flex-col items-center justify-center">
       {/* Contenido centralizado */}
       <section className="flex flex-col items-center text-center space-y-6 max-w-2xl">
         <img src={logoNaranja} alt="Riko Logo" className="w-56 h-auto" />

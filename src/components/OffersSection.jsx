@@ -5,7 +5,7 @@ import Home from "../assets/Home.png";
 // Sección de ofertas promocionales
 const OffersSection = () => {
   return (
-    <div className="relative py-20 bg-white">
+    <div id="Ofertas" className="relative py-20 bg-white">
       <div className="container mx-auto px-12">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           
