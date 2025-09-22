@@ -5,7 +5,7 @@ import MisPedidos from "../assets/Mis Pedidos.png";
 // Sección que explica el proceso de pedido en 4 pasos
 const ProcessSection = () => {
   return (
-    <div className="relative py-32 px-4 mt-4 mb-4 bg-white">
+    <div className="relative py-10 px-4 mt-4 mb-4 bg-white">
       <div id="como-funciona" className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between">
           {/* Columna izquierda: pasos del proceso */}
@@ -57,30 +57,30 @@ const ProcessSection = () => {
             </div>
           </div>
 
-          {/* Columna derecha: mockups de pantallas móviles */}
-          <div className="relative w-full lg:w-1/2 flex flex-row items-center lg:items-start justify-center space-x-8 pt-32 lg:pt-0">
-            <div className="w-48 md:w-64 lg:w-72 sm:-mt-8 lg:-mt-24 rounded-[2rem] overflow-hidden shadow-2xl">
-              <div className="shadow-2xl overflow-hidden">
-                <img
-                  src={BolsitaImage}
-                  alt="Bolsita de compra"
-                  className="w-full h-[550px] md:h-[650px] object-cover"
-                />
-              </div>
-            </div>
+         {/* Columna derecha: mockups de screenshots de iPhone */}
+<div className="relative w-full lg:w-1/2 flex flex-col md:flex-row items-center lg:items-start justify-center space-y-4 md:space-y-0 md:space-x-8 pt-20 lg:pt-0">
+  {/* Primer mockup: Bolsita de compra */}
+  <div className="w-48 sm:w-56 md:w-64 lg:w-80 xl:w-96 aspect-[9/19.5] -mt-1 md:-mt-4 lg:-mt-12 rounded-[1.5rem] overflow-hidden shadow-xl bg-gradient-to-b from-white to-gray-100 flex items-center justify-center">
+    <img
+      src={BolsitaImage}
+      alt="Screenshot de iPhone: Bolsita de compra en la app"
+      className="w-full h-full max-w-full max-h-full object-contain p-2"
+      loading="lazy"
+    />
+  </div>
 
-            <div className="w-48 md:w-64 lg:w-72 sm:mt-8 lg:mt-24 rounded-[2rem] overflow-hidden shadow-2xl">
-              <div className="bg-gray-300">
-                <div className="w-full h-[550px] md:h-[650px] bg-white flex items-center justify-center text-gray-700">
-                  <img
-                    src={MisPedidos}
-                    alt="Pantalla de Mis Pedidos"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Segundo mockup: Mis Pedidos */}
+  <div className="w-48 sm:w-56 md:w-64 lg:w-80 xl:w-96 aspect-[9/19.5] mt-1 md:mt-4 lg:mt-12 rounded-[1.5rem] overflow-hidden shadow-xl bg-gradient-to-b from-white to-gray-100 flex items-center justify-center">
+    <img
+      src={MisPedidos}
+      alt="Screenshot de iPhone: Pantalla de Mis Pedidos en la app"
+      className="w-full h-full max-w-full max-h-full object-contain p-2"
+      loading="lazy"
+    />
+  </div>
+</div>
+
+
         </div>
       </div>
     </div>

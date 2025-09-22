@@ -14,7 +14,7 @@ const AppServiceSection = () => {
               <img
                 src={Chat}
                 alt="App Chat Interface"
-                className="w-full h-[550px] md:h-[650px] object-cover"
+                className="w-full h-full max-w-full max-h-full object-contain p-2"
               />
             </div>
           </div>

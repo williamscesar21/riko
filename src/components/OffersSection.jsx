@@ -44,24 +44,29 @@ const OffersSection = () => {
             </div>
           </div>
 
-          {/* Columna derecha: mockups de pantallas móviles */}
-          <div className="relative w-full lg:w-1/2 flex flex-row items-start justify-center space-x-4">
-            <div className="w-48 md:w-64 lg:w-72 -mt-12 rounded-[2rem] overflow-hidden shadow-2xl">
-              <div className="shadow-2xl overflow-hidden">
-                <div className="w-full h-[550px] md:h-[650px] bg-white flex items-center justify-center text-gray-700 text-xs text-center">
-                  <img src={Inicio} alt="Pantalla de Inicio de Sesión" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
+       {/* Columna derecha: mockups de screenshots de iPhone */}
+<div className="relative w-full lg:w-1/2 flex flex-col md:flex-row items-center lg:items-start justify-center space-y-4 md:space-y-0 md:space-x-8 pt-0 lg:pt-0">
+  {/* Primer mockup: Pantalla de Inicio de Sesión */}
+  <div className="w-48 sm:w-56 md:w-64 lg:w-80 xl:w-96 aspect-[9/19.5] -mt-1 md:-mt-4 lg:-mt-12 rounded-[1.5rem] overflow-hidden shadow-xl bg-gradient-to-b from-white to-gray-100 flex items-center justify-center">
+    <img
+      src={Inicio}
+      alt="Screenshot de iPhone: Pantalla de Inicio de Sesión en la app"
+      className="w-full h-full max-w-full max-h-full object-contain p-2"
+      loading="lazy"
+    />
+  </div>
 
-            <div className="w-48 md:w-64 lg:w-72 mt-12 rounded-[2rem] overflow-hidden shadow-2xl">
-              <div className="shadow-2xl overflow-hidden">
-                <div className="w-full h-[550px] md:h-[650px] bg-white flex items-center justify-center text-gray-700 text-xs text-center">
-                  <img src={Home} alt="Pantalla de Inicio" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Segundo mockup: Pantalla de Inicio */}
+  <div className="w-48 sm:w-56 md:w-64 lg:w-80 xl:w-96 aspect-[9/19.5] mt-1 md:mt-4 lg:mt-12 rounded-[1.5rem] overflow-hidden shadow-xl bg-gradient-to-b from-white to-gray-100 flex items-center justify-center">
+    <img
+      src={Home}
+      alt="Screenshot de iPhone: Pantalla de Inicio en la app"
+      className="w-full h-full max-w-full max-h-full object-contain p-2"
+      loading="lazy"
+    />
+  </div>
+</div>
+
           
         </div>
       </div>
