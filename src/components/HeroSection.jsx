@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div>
               <h3 className="font-semibold">¡Entrega Rápida!</h3>
               <p className="text-sm text-gray-600">
-                Promesa de entrega en 30 minutos
+                Restaurantes optimizados para entregas rápidas
               </p>
             </div>
           </div>
