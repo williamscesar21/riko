@@ -27,6 +27,11 @@ const Navbar = () => {
     setMenuAbierto(!menuAbierto);
   };
 
+  // Función para cerrar el menú (reutilizable)
+  const cerrarMenu = () => {
+    setMenuAbierto(false);
+  };
+
   const links = [
     { name: "Riko", href: "#Home" },
     { name: "Ofertas", href: "#Ofertas" },
@@ -102,6 +107,7 @@ const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
+                  onClick={cerrarMenu}  // Cierra el menú al hacer clic en el link
                   className="flex items-center p-2 rounded-lg transition-colors duration-200 hover:bg-orange-400 cursor-pointer text-white"
                 >
                   <span className="text-sm font-medium">{link.name}</span>
