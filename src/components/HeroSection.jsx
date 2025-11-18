@@ -58,9 +58,9 @@ const HeroSection = () => {
               <span className="text-xl">📦</span>
             </div>
             <div>
-              <h3 className="font-semibold">¡Recogida Disponible!</h3>
+              <h3 className="font-semibold">¡Cualquier Restaurante Disponible!</h3>
               <p className="text-sm text-gray-600">
-                Recogida en la puerta de tu casa
+                Los restaurantes más populares a tu alcance
               </p>
             </div>
           </div>
