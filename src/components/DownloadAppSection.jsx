@@ -37,30 +37,37 @@ const DownloadAppSection = () => {
               </p>
             </div>
 
-            {/* Columna: botones de descarga */}
-            <div className="flex-shrink-0 flex flex-col items-center md:items-start space-y-4">
+            {/* Columna: botones de descarga (MEJORA DE UI/UX) */}
+            <div className="flex-shrink-0 flex flex-col items-center md:items-start space-y-6">
+              {/* Botón de Google Play (Ahora más grande y con ancho fijo) */}
               <a
                 href="https://play.google.com/store/apps/details?id=com.williams.rikoapp"
-                className="flex items-center bg-black text-white border-2 border-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-full max-w-xs md:w-64 bg-black text-white border-2 border-white rounded-xl py-4 px-6 shadow-xl transform hover:scale-[1.03] transition duration-300 ease-in-out hover:bg-gray-800"
               >
-                <div className="w-8 h-8 mr-3 rounded-lg">
+                <div className="w-8 h-8 mr-3">
                   <img src={Playstore} alt="Play Store" />
                 </div>
-                <div>
-                  <div className="text-xs">Descargar en</div>
-                  <div className="font-bold text-lg">Google Play</div>
+                <div className="text-left">
+                  <div className="text-sm">Descargar en</div>
+                  <div className="font-extrabold text-xl">Google Play</div>
                 </div>
               </a>
+
+              {/* Botón de App Store (Mismo tamaño y estilo) */}
               <a
                 href="https://apps.apple.com/ve/app/riko-app/id6752636269?l=en-GB"
-                className="flex items-center bg-black text-white border-2 border-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-full max-w-xs md:w-64 bg-black text-white border-2 border-white rounded-xl py-4 px-6 shadow-xl transform hover:scale-[1.03] transition duration-300 ease-in-out hover:bg-gray-800"
               >
-                <div className="w-8 h-8 mr-3 rounded-lg">
+                <div className="w-8 h-8 mr-3">
                   <img src={Appstore} alt="App Store" />
                 </div>
-                <div>
-                  <div className="text-xs">Descargar en</div>
-                  <div className="font-bold text-lg">App Store</div>
+                <div className="text-left">
+                  <div className="text-sm">Descargar en</div>
+                  <div className="font-extrabold text-xl">App Store</div>
                 </div>
               </a>
             </div>
