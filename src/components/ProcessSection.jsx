@@ -1,6 +1,6 @@
 import React from "react";
 import BolsitaImage from "../assets/Bolsita.png";
-import MisPedidos from "../assets/Mis Pedidos.png";
+import MisPedidos from "../assets/Mis Pedidos.jpg";
 
 // Sección que explica el proceso de pedido en 4 pasos
 const ProcessSection = () => {
