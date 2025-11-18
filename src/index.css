@@ -1,1 +1,12 @@
+/* 1. Importa la fuente Poppins con varios pesos desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* 2. Importa las directivas base de Tailwind CSS */
 @import "tailwindcss";
+
+/* 3. Aplica Poppins globalmente como reserva (opcional, pero útil) */
+/* Nota: Si usas tailwind.config.js, este paso no es estrictamente necesario,
+   pero asegura la fuente si Tailwind no está configurado. */
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
