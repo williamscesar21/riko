@@ -40,7 +40,7 @@ const DownloadAppSection = () => {
             {/* Columna: botones de descarga */}
             <div className="flex-shrink-0 flex flex-col items-center md:items-start space-y-4">
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.williams.rikoapp"
                 className="flex items-center bg-black text-white border-2 border-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="w-8 h-8 mr-3 rounded-lg">
@@ -52,7 +52,7 @@ const DownloadAppSection = () => {
                 </div>
               </a>
               <a
-                href="#"
+                href="https://apps.apple.com/ve/app/riko-app/id6752636269?l=en-GB"
                 className="flex items-center bg-black text-white border-2 border-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="w-8 h-8 mr-3 rounded-lg">
