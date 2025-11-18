@@ -46,7 +46,7 @@ const Navbar = () => {
         className={`fixed w-full top-0 left-0 z-50 transition-transform duration-500 ease-in-out ${
           mostrarNavbar ? "translate-y-0" : "-translate-y-full"
         }`}
-        style={{ backgroundColor: "rgba(255, 102, 0, 0.7)" }}
+        style={{ backgroundColor: "rgba(255, 102, 0, 0.9)" }}
       >
         <div className="container mx-auto flex justify-between items-center p-4">
           
