@@ -47,8 +47,8 @@ const ContactSection = () => {
             <div className="space-y-6 mb-12">
               <ContactItem 
                 IconComponent={FiPhone} // 2. Usando el ícono de teléfono
-                text="04121510662" 
-                link="tel:+584121510662" 
+                text="04227198014" 
+                link="tel:+584227198014" 
               />
               <ContactItem 
                 IconComponent={FiMail} // 3. Usando el ícono de correo

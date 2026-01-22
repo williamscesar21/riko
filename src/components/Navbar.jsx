@@ -34,7 +34,7 @@ const Navbar = () => {
 
   const links = [
     { name: "Riko", href: "#Home" },
-    { name: "Ofertas", href: "#Ofertas" },
+    // { name: "Ofertas", href: "#Ofertas" },
     { name: "Servicios", href: "#Servicios" },
     { name: "Contacto", href: "#Contacto" },
   ];
