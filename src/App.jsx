@@ -18,7 +18,7 @@ const App = () => {
       <DownloadSection />
       <ProcessSection />
       <AppServiceSection />
-      <OffersSection />
+      {/* <OffersSection /> */}
       <ContactSection />
     </div>
   );
