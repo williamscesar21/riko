@@ -44,7 +44,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 pt-4">
             <a 
               className={`flex items-center ${BG_COLOR} text-white font-bold text-lg py-4 px-8 rounded-full shadow-2xl hover:shadow-xl transition duration-300 transform hover:scale-105`}
-              href="https://wa.me/584121510662?text=Para%20registrarse%20en%20Riko%20App%2C%20deben%20indicar%20el%20nombre%20del%20restaurante%2C%20correo%2C%20direcci%C3%B3n%2C%20tel%C3%A9fono%2C%20y%20todo%20el%20men%C3%BA%20con%20las%20im%C3%A1genes%20de%20los%20productos."
+              href="https://wa.me/584228014719?text=Para%20registrarse%20en%20Riko%20App%2C%20deben%20indicar%20el%20nombre%20del%20restaurante%2C%20correo%2C%20direcci%C3%B3n%2C%20tel%C3%A9fono%2C%20y%20todo%20el%20men%C3%BA%20con%20las%20im%C3%A1genes%20de%20los%20productos."
               target="_blank"
               rel="noopener noreferrer"
             >
