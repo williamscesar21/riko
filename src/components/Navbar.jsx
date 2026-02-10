@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // <--- 1. Importamos Link
 import logoBlanco from "../assets/logoBlanco.png";
 
-// Componente de navegación principal
 const Navbar = () => {
   const [mostrarNavbar, setMostrarNavbar] = useState(true);
   const [ultimoScrollY, setUltimoScrollY] = useState(0);
@@ -27,21 +27,21 @@ const Navbar = () => {
     setMenuAbierto(!menuAbierto);
   };
 
-  // Función para cerrar el menú (reutilizable)
   const cerrarMenu = () => {
     setMenuAbierto(false);
   };
 
+  // <--- 2. Actualizamos los links. 
+  // Nota: Usamos "/" antes del # para que si estás en /planes, el link te devuelva al Home
   const links = [
-    { name: "Riko", href: "#Home" },
-    // { name: "Ofertas", href: "#Ofertas" },
-    { name: "Servicios", href: "#Servicios" },
-    { name: "Contacto", href: "#Contacto" },
+    { name: "Inicio", href: "/" },
+    { name: "Planes", href: "/planes" }, // <--- Nuevo link a Planes
+    { name: "Servicios", href: "/#Servicios" },
+    { name: "Contacto", href: "/#Contacto" },
   ];
 
   return (
     <>
-      {/* Barra superior fija */}
       <nav
         className={`fixed w-full top-0 left-0 z-50 transition-transform duration-500 ease-in-out ${
           mostrarNavbar ? "translate-y-0" : "-translate-y-full"
@@ -50,23 +50,24 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex justify-between items-center p-4">
           
-          {/* Logo */}
-          <div className="flex items-center space-x-2 text-xl font-bold text-white">
+          {/* Logo con Link al Home */}
+          <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-white">
             <img src={logoBlanco} alt="Logo Meal Monkey" className="h-10" />
-          </div>
+          </Link>
 
-          {/* Menú horizontal en escritorio */}
+          {/* Menú Desktop */}
           <ul className="hidden md:flex space-x-8 text-white">
             {links.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="hover:text-orange-200">
+                {/* Usamos Link en lugar de a */}
+                <Link to={link.href} className="hover:text-orange-200">
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
 
-          {/* Botón burger para abrir menú móvil */}
+          {/* Botón Burger */}
           <div className="md:hidden flex items-center">
             <button
               onClick={alternarMenu}
@@ -90,28 +91,29 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Sidebar móvil desplegable */}
+      {/* Sidebar Móvil */}
       <aside
         className={`fixed top-0 right-0 h-screen w-64 text-white p-4 flex flex-col items-center shadow-lg transform transition-transform duration-300 ease-in-out z-40 mt-[4.5rem] ${
           menuAbierto ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
-        style={{ backgroundColor: "rgba(255, 102, 0, 0.7)" }}
+        style={{ backgroundColor: "rgba(255, 102, 0, 0.95)" }} // Un poco más opaco para legibilidad
       >
         <div className="flex flex-col items-center mb-8 mt-12">
-          <span className="text-2xl text-white">Menú</span>
+          <span className="text-2xl text-white font-bold">Menú</span>
         </div>
 
         <nav className="w-full">
           <ul className="space-y-4">
             {links.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
-                  onClick={cerrarMenu}  // Cierra el menú al hacer clic en el link
-                  className="flex items-center p-2 rounded-lg transition-colors duration-200 hover:bg-orange-400 cursor-pointer text-white"
+                {/* Link en versión móvil */}
+                <Link
+                  to={link.href}
+                  onClick={cerrarMenu}
+                  className="flex items-center p-2 rounded-lg transition-colors duration-200 hover:bg-orange-500 cursor-pointer text-white"
                 >
-                  <span className="text-sm font-medium">{link.name}</span>
-                </a>
+                  <span className="text-lg font-medium">{link.name}</span>
+                </Link>
               </li>
             ))}
           </ul>
